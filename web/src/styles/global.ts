@@ -1,10 +1,19 @@
 import { createGlobalStyle, css } from 'styled-components';
+import media from 'styled-media-query';
 
 export default createGlobalStyle`
   ${css`
     :root {
       font-size: 60%;
     }
+  `}
+
+  ${media.greaterThan('medium')`
+    ${css`
+      :root {
+        font-size: 62.5%;
+      }
+    `}
   `}
 
   * {

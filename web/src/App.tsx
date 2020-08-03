@@ -13,7 +13,7 @@ const App: React.FC = () => {
         <GlobalStyle />
       </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
 export default App;
