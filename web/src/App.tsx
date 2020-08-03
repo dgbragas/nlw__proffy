@@ -1,5 +1,19 @@
 import React from 'react';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
 
-const App: React.FC = () => <h1>Hello World</h1>
+import GlobalStyle from './styles/global';
+import colors from './styles/colors';
+
+const App: React.FC = () => {
+  const theme: DefaultTheme = colors;
+
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+      </ThemeProvider>
+    </>
+  )
+}
 
 export default App;
