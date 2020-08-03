@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
+import { Link } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   align-items: center;
@@ -86,7 +87,7 @@ export const ButtonsWrapper = styled.div`
   `}
 `;
 
-export const StudyButton = styled.a`
+export const StudyButton = styled(Link)`
   align-items: center;
   background-color: ${({ theme: { colors } }) => colors.primaryLighter};
   border-radius: 0.8rem;

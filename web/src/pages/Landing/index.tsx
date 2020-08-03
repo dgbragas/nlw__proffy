@@ -20,11 +20,11 @@ const LandingPage: React.FC = () => {
         <S.HeroImage src={landingImg} alt="Plataforma de estudos" />
 
         <S.ButtonsWrapper>
-          <S.StudyButton href="">
+          <S.StudyButton to="/study">
             <img src={studyIcon} alt="Estudar" />
             Estudar
           </S.StudyButton>
-          <S.ClassesButton href="">
+          <S.ClassesButton to="/give-classes">
             <img src={giveClassesIcon} alt="Dar aulas" />
             Dar aulas
           </S.ClassesButton>
