@@ -5,11 +5,11 @@ import GlobalStyle from './styles/global';
 import colors from './styles/colors';
 
 const App: React.FC = () => {
-  const theme: DefaultTheme = colors;
+  const themeColors: DefaultTheme = colors;
 
   return (
     <>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themeColors}>
         <GlobalStyle />
       </ThemeProvider>
     </>

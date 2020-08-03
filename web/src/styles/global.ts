@@ -1,9 +1,14 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
 export default createGlobalStyle`
+  ${css`
+    :root {
+      font-size: 60%;
+    }
+  `}
+
   * {
     box-sizing: border-box;
-    font-size: 60%;
     margin: 0%;
     padding: 0;
     outline: 0;
@@ -21,11 +26,17 @@ export default createGlobalStyle`
 
   html, body, #root {
     background-color: ${({ theme: { colors } }) => colors.background};
-    min-height: 100%;
+    min-height: 100vh;
   }
 
-  body, input, button {
-    font-family: 'Poppins', sans-serif;
+  #root {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  body, input, button, textarea {
+    font: 500 1.6rem 'Poppins';
     -webkit-font-smoothing: antialiased;
   }
 
