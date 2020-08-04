@@ -2,8 +2,12 @@ import { Router } from 'express';
 
 const connectionsRouter = Router();
 
-connectionsRouter.use('/');
+connectionsRouter.use('/', (request, response) => {
+  return response.json({ message: true });
+});
 
-connectionsRouter.post('/');
+connectionsRouter.post('/', (request, response) => {
+  return response.json({ message: true });
+});
 
 export default connectionsRouter;
