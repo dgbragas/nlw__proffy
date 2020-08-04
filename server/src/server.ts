@@ -4,8 +4,10 @@ import routes from './routes';
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/users', (request, response) => {
-  return response.json({ ok: true });
+  return response.json({ message: 'Hello' });
 });
 
 app.listen(3333);
