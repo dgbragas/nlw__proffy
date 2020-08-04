@@ -45,6 +45,7 @@ export default createGlobalStyle`
   }
 
   body, input, button, textarea {
+    color: ${({ theme: { colors } }) => colors.textBase};
     font: 500 1.6rem 'Poppins';
     -webkit-font-smoothing: antialiased;
   }
