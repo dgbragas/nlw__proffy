@@ -1,13 +1,11 @@
 import { Router } from 'express';
+import ConnectionsController from '../controllers/ConnectionsController';
 
 const connectionsRouter = Router();
+const connectionsController = new ConnectionsController();
 
-connectionsRouter.use('/', (request, response) => {
-  return response.json({ message: true });
-});
+connectionsRouter.get('/', connectionsController.index);
 
-connectionsRouter.post('/', (request, response) => {
-  return response.json({ message: true });
-});
+connectionsRouter.post('/', connectionsController.create);
 
 export default connectionsRouter;
