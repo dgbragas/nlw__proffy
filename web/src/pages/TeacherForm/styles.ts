@@ -54,10 +54,30 @@ export const Fieldset = styled.fieldset`
     margin-bottom: 2.4rem;
     padding-bottom: 1.6rem;
     width: 100%;
+
+    button {
+      background: none;
+      border: 0;
+      color: ${({ theme: { colors } }) => colors.primary};
+      font: 700 1.6rem Archivo;
+      transition: color 0.2s;
+
+      &:hover {
+        color: ${({ theme: { colors } }) => colors.primaryDark};
+      }
+    }
   }
 
   ${media.greaterThan('medium')`
     padding: 0 6.4rem;
+  `}
+`;
+
+export const ScheduleItem = styled.div`
+  ${media.greaterThan('medium')`
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 1.6rem;
   `}
 `;
 

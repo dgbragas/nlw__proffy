@@ -18,6 +18,7 @@ export const SearchForm = styled.form`
   }
 
   ${media.greaterThan('medium')`
+    align-items: center;
     bottom: -28px;
     column-gap: 16px;
     display: grid;

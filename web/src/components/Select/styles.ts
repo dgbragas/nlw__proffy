@@ -16,17 +16,17 @@ export const FormGroup = styled.div`
 
   label {
     font-size: 1.4rem;
+  }
 
-    input {
-      background-color: ${({ theme: { colors } }) => colors.background};
-      border: 1px solid ${({ theme: { colors } }) => colors.lineInWhite};
-      border-radius: 0.8rem;
-      font: 1.6rem Archivo;
-      height: 5.6rem;
-      margin-top: 0.8rem;
-      outline: 0;
-      padding: 0 1.6rem;
-      width: 100%;
-    }
+  select {
+    background-color: ${({ theme: { colors } }) => colors.background};
+    border: 1px solid ${({ theme: { colors } }) => colors.lineInWhite};
+    border-radius: 0.8rem;
+    font: 1.6rem Archivo;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    outline: 0;
+    padding: 0 1.6rem;
+    width: 100%;
   }
 `;
