@@ -29,7 +29,7 @@ export const TeacherItem = styled.article`
       font-size: 1.6rem;
     }
 
-    button {
+    a {
       align-items: center;
       background: ${({ theme: { colors } }) => colors.secondary};
       border: 0;
@@ -39,6 +39,7 @@ export const TeacherItem = styled.article`
       display: flex;
       height: 5.6rem;
       justify-content: space-evenly;
+      text-decoration: none;
       transition: 0.2s;
       width: 20rem;
 
