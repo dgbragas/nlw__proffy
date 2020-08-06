@@ -8,9 +8,14 @@ import * as S from './styles';
 
 interface PageHeaderProps {
   title: string;
+  description?: string;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, children }) => (
+const PageHeader: React.FC<PageHeaderProps> = ({
+  title,
+  description,
+  children,
+}) => (
   <S.Header>
     <S.TopBarWrapper>
       <Link to="/">
@@ -21,6 +26,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, children }) => (
 
     <S.HeaderContent>
       <strong>{title}</strong>
+
+      {description && <p>{description}</p>}
 
       {children}
     </S.HeaderContent>

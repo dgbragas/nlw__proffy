@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Input from '../../components/Input';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem from '../../components/TeacherItem';
 
@@ -10,24 +11,9 @@ const TeacherListPage: React.FC = () => {
     <S.Wrapper>
       <PageHeader title="Estes são os proffys disponíveis">
         <S.SearchForm>
-          <S.FormGroup>
-            <label htmlFor="subject">
-              Matéria
-              <input type="text" id="subject" />
-            </label>
-          </S.FormGroup>
-          <S.FormGroup>
-            <label htmlFor="week_day">
-              Dia da semana
-              <input type="text" id="week_day" />
-            </label>
-          </S.FormGroup>
-          <S.FormGroup>
-            <label htmlFor="time">
-              Hora
-              <input type="text" id="time" />
-            </label>
-          </S.FormGroup>
+          <Input name="subject" label="Matéria" />
+          <Input name="week_day" label="Dia da semana" />
+          <Input name="time" label="Hora" />
         </S.SearchForm>
       </PageHeader>
 

@@ -49,6 +49,14 @@ export const HeaderContent = styled.div`
     line-height: 4.2rem;
   }
 
+  p {
+    color: ${({ theme: { colors } }) => colors.textInPrimary};
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-top: 2.4rem;
+    max-width: 30rem;
+  }
+
   ${media.greaterThan('medium')`
     align-items: flex-tart;
     display: flex;
