@@ -22,7 +22,7 @@ const Landing: React.FC = () => {
       </S.Title>
 
       <S.ButtonsContainer>
-        <S.ButtonPrimary>
+        <S.ButtonPrimary onPress={() => navigate('Study')}>
           <Image source={studyIcon} />
           <S.ButtonText>Estudar</S.ButtonText>
         </S.ButtonPrimary>
