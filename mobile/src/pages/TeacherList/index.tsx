@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -33,6 +34,10 @@ const TeacherList: React.FC = () => {
     });
   }
 
+  useFocusEffect(() => {
+    loadFavorites();
+  });
+
   function handleToggleFiltersVisibile() {
     setIsFiltersVisibile(!isFiltersVisibile);
   }
@@ -60,11 +65,11 @@ const TeacherList: React.FC = () => {
     <S.Container>
       <PageHeader
         title="Proffys disponíveis"
-        headerRight={
+        headerRight={(
           <BorderlessButton onPress={handleToggleFiltersVisibile}>
             <Feather name="filter" size={20} color="#FFF" />
           </BorderlessButton>
-        }
+        )}
       >
         {isFiltersVisibile && (
           <S.SearchForm>
