@@ -7,28 +7,38 @@ import whtasappIcon from '../../assets/images/icons/whatsapp.png';
 
 import * as S from './styles';
 
-const TeacherItem: React.FC = () => (
+export interface Teacher {
+  avatar: string;
+  bio: string;
+  cost: number;
+  id: number;
+  name: string;
+  subject: string;
+  user_id: string;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => (
   <S.Container>
     <S.Profile>
-      <S.Avatar source={{ uri: 'https://github.com/diego3g.png' }} />
+      <S.Avatar source={{ uri: teacher.avatar }} />
 
       <S.ProfileInfo>
-        <S.Name>Diego Fernandes</S.Name>
-        <S.Subject>Química</S.Subject>
+        <S.Name>{teacher.name}</S.Name>
+        <S.Subject>{teacher.subject}</S.Subject>
       </S.ProfileInfo>
     </S.Profile>
 
-    <S.Bio style={{ marginHorizontal: 24 }}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure esse,
-      reprehenderit perferendis sunt deleniti a atque illum exercitationem
-      optio, est et soluta dolor dolore voluptate veritatis molestiae officiis
-      dolorum quia?
-    </S.Bio>
+    <S.Bio style={{ marginHorizontal: 24 }}>{teacher.bio}</S.Bio>
 
     <S.Footer>
       <S.Price>
         Preço/hora: {'   '}
-        <S.PriceValue>R$ 20,00</S.PriceValue>
+        <S.PriceValue>R$ {teacher.cost}</S.PriceValue>
       </S.Price>
 
       <S.ButtonsContainer>
