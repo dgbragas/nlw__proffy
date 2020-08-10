@@ -14,6 +14,12 @@ export const TopBar = styled.View`
 
 export const GoBackButton = styled(BorderlessButton)``;
 
+export const Header = styled.View`
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
 export const Title = styled.Text`
   color: #fff;
   font-family: 'Archivo700';
