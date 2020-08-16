@@ -1,8 +1,8 @@
 ![](./docs/banner.png)
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/count/dgbragas/gostack__github-explorer?style=for-the-badge" />
-  <img src="https://img.shields.io/github/repo-size/dgbragas/gostack__github-explorer?style=for-the-badge" />
+  <img src="https://img.shields.io/github/languages/count/dgbragas/nlw__proffy?style=for-the-badge" />
+  <img src="https://img.shields.io/github/repo-size/dgbragas/nlw__proffy?style=for-the-badge" />
   <img src="http://img.shields.io/static/v1?label=STATUS&message=V1%20FINISHED&color=GREEN&style=for-the-badge"/>
 </p>
 
