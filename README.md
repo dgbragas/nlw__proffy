@@ -20,23 +20,24 @@ This project was created by @tiagoluchtenberg (on Instagram) and developed in th
 
 - <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>
 - <a href="https://yarnpkg.com/" target="_blank">YarnPKG</a> or <a href="https://www.npmjs.com/" target="_blank">NPM</a>
-- <a href="" target="_blank">Android</a> or <a href="" target="_blank">iOS</a> Emulator
+- <a href="https://react-native.rocketseat.dev/android/linux" target="_blank">Android</a> or <a href="https://react-native.rocketseat.dev/ios/macos" target="_blank">iOS</a> Emulator
+- <a href="https://docs.expo.io/get-started/installation/" target="_blank">Expo</a> installed globally in your PC.
 
 
 ### Running the server
 
 ```bash
   # Clonning the repository
-  git clone https://github.com/dgbragas/gostack__managing-repositories
+  git clone https://github.com/dgbragas/nlw__proffy
 
   # Entering in the folder
-  cd gostack__managing-repositories/backend
+  cd nlw__proffy/server
 
   # Installing project dependencies (you can also use 'npm install')
   yarn
 
   # Running the application (it will run at http://localhost:3000)
-  yarn dev
+  yarn start
 ```
 
 
@@ -44,7 +45,7 @@ This project was created by @tiagoluchtenberg (on Instagram) and developed in th
 ```bash
   # Open another terminal in root folder (gostack__managing-repositories) and and DON'T stop the backend
   # Enter in the front-end folder
-  cd gostack__managing-repositories/frontend
+  cd nlw__proffy/web
   
   # Installing project dependencies (you can also use 'npm install')
   yarn
@@ -53,21 +54,15 @@ This project was created by @tiagoluchtenberg (on Instagram) and developed in th
   yarn start
 ```
 
-### Running the web application
+### Running the mobile app
 ```bash
-  # Clonning the repository
-  git clone https://github.com/dgbragas/gostack__github-explorer
-
   # Entering in the cloned folder
-  cd gostack__github-explorer/backend
+  cd nlw__proffy/mobile
 
   # Installing project dependencies (you can also use 'npm install')
   yarn
 
-  # After initialize your AVD type: (the 'run-android' can be changed by 'run-ios' if in Mac environment):
-  yarn react-native run-android
-
-  # Then maybe you will need start the app again. For this you can type
+  # After initialize your AVD type:
   yarn start
 ```
 
