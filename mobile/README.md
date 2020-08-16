@@ -20,4 +20,4 @@
 
 ---
 
-*Developed by @dgbragas at @Rocketseat GoStack Bootcamp*
+*Developed by @dgbragas at @Rocketseat NLW#2*
