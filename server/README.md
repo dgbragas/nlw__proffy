@@ -24,4 +24,4 @@ An application server constructed using sqlite3 and knex to provider a NodeJS AP
 
 ---
 
-*Developed by @dgbragas at @Rocketseat GoStack Bootcamp*
+*Developed by @dgbragas at @Rocketseat NLW#2*
